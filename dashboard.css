@@ -121,7 +121,7 @@ footer {
 }
 .project-title {
   grid-column: 1/3;
-  align-self: stretch;
+
 }
 .section-title {
   /* height: 30px; */
