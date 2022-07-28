@@ -1,0 +1,81 @@
+.container {
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.header {
+  border: 1px solid blue;
+  grid-column: 2/3;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.top-icons {
+  height: 25px;
+}
+
+.top-left-header > input {
+  background-color: rgb(255, 244, 244);
+  border-radius: 10px;
+  max-width: 600px;
+}
+.top-left-header {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+}
+
+.top-right-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 6px;
+}
+.top-right-header > p {
+  min-width: 100px;
+  font-weight: 900;
+}
+
+.top-right-avatar {
+  height: 50%;
+}
+
+.bottom-left-header {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.bottom-right-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 4px;
+}
+
+.bottom-right-header > button {
+  background: steelblue;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-weight: 900;
+}
+
+.sidebar {
+  border: 1px solid blue;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  min-height: 100vh;
+}
+.main-content {
+  border: 1px solid blue;
+  grid-column: 2/3;
+  min-height: 100vh;
+}
