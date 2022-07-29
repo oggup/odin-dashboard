@@ -16,8 +16,14 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-.icon {
+.icon,
+.top-right-avatar {
   height: 25px;
+  cursor: pointer;
+}
+img,
+button {
+  cursor: pointer;
 }
 
 .top-left-header > input {
@@ -31,11 +37,11 @@ body {
 }
 
 .top-right-header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   align-items: center;
-  justify-items: center;
-  gap: 6px;
+  justify-content: flex-end;
+  height: 70%;
+  gap: 10px;
 }
 .top-right-header > p {
   min-width: 100px;
@@ -49,22 +55,22 @@ body {
 }
 
 .bottom-left-header {
-  display: grid;
-  grid-template-columns: 0fr 1fr;
-  gap: 30px;
+  display: flex;
   align-items: center;
+  gap: 10px;
 }
+
 .bottom-left-header img {
+  height: 90px;
   border-radius: 50%;
   background: rgb(73, 73, 226);
 }
 .bottom-right-header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
+  display: flex;
   gap: 4px;
+  justify-content: flex-end;
 }
+
 
 .bottom-right-header > button {
   background: steelblue;
@@ -72,7 +78,7 @@ body {
   border: none;
   border-radius: 15px;
   height: 40px;
-  /* width: 200px; */
+  width: 100px;
   font-weight: 900;
 }
 /* end of header */
@@ -84,6 +90,19 @@ body {
   min-height: 100vh;
   background-color: steelblue;
   color: white;
+  padding: 15px;
+}
+
+.menu-icon {
+  height: 30px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.menu-item > * {
+  cursor: pointer;
 }
 /* main content */
 .main-content {
@@ -123,7 +142,7 @@ body {
   display: grid;
   grid-template-rows: auto;
   align-items: start;
-  gap:20px;
+  gap: 20px;
 }
 .main-content-right .card {
   border-style: none;
@@ -178,5 +197,5 @@ body {
 
 a {
   text-decoration: none;
-  color:blue;
+  color: blue;
 }
