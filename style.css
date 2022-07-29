@@ -145,3 +145,16 @@ body {
   font-weight: 900;
   font-size: x-large;
 }
+/* Trending */
+.trending-card {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  align-items: center;
+}
+.trending-card img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.trending-card p {
+  grid-column: 2/3;
+}
