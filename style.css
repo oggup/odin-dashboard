@@ -71,7 +71,6 @@ button {
   justify-content: flex-end;
 }
 
-
 .bottom-right-header > button {
   background: steelblue;
   color: white;
@@ -135,7 +134,9 @@ button {
   box-shadow: 10px 5px 5px gray;
 }
 .card-icons {
-  text-align: end;
+  display: flex;
+  align-self: end;
+  justify-content: flex-end;
 }
 
 .main-content-right {
