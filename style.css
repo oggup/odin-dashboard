@@ -121,6 +121,7 @@ body {
   display: grid;
   grid-template-rows: auto;
   align-items: start;
+  gap:20px;
 }
 .main-content-right .card {
   border-style: none;
@@ -169,5 +170,10 @@ body {
   background: rgb(73, 73, 226);
   margin: 10px;
 }
-.trending-info{grid-row: 2/3;
+.trending-info {
+  grid-row: 2/3;
+}
+
+a {
+  text-decoration: none;
 }
